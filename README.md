@@ -2,6 +2,9 @@
 
 A modern, responsive resume website built with HTML and Tailwind CSS.
 
+> [!NOTE]
+> **Live Demo:** You can view the live version of the resume here: [theomerkaratas.github.io/resume](https://theomerkaratas.github.io/resume/)
+
 ## Features
 
 - **Responsive Design**: Optimized for mobile, tablet, and desktop screens.

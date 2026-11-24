@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,7 +44,7 @@
     class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 transition-colors duration-300 p-2 sm:p-4 md:p-12 font-sans"
   >
     <button
-      onclick="document.documentElement.classList.toggle('dark')"
+      id="theme-toggle"
       class="fixed bottom-6 right-6 sm:top-6 sm:bottom-auto p-3 rounded-full bg-white dark:bg-slate-800 shadow-lg border border-slate-200 dark:border-slate-700 transition-all active:scale-90 hover:scale-110 z-50 group"
       title="Toggle Dark Mode"
     >
@@ -239,6 +239,46 @@
               <h3
                 class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white"
               >
+                Platform DevOps Engineer
+              </h3>
+              <div
+                class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-4 gap-2"
+              >
+                <span class="text-lg font-bold text-blue-600 dark:text-blue-400"
+                  >Innova</span
+                >
+                <span
+                  class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 w-fit"
+                  >Nov 2026 - Present</span
+                >
+              </div>
+              <ul
+                class="list-disc ml-4 space-y-3 text-slate-700 dark:text-slate-300 marker:text-blue-600 dark:marker:text-blue-400"
+              >
+                <li>
+                  Building and maintaining reliable cloud and Kubernetes
+                  platforms.
+                </li>
+                <li>
+                  Automating infrastructure and deployments with CI/CD pipelines
+                  and Infrastructure as Code.
+                </li>
+                <li>
+                  Improving system monitoring, reliability, and incident
+                  response.
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="relative pl-8 before:absolute before:left-0 before:top-2 before:bottom-0 before:w-px before:bg-slate-200 dark:before:bg-slate-700"
+            >
+              <div
+                class="absolute left-[-4px] top-2 w-2 h-2 rounded-full bg-blue-500 ring-4 ring-white dark:ring-slate-900"
+              ></div>
+              <h3
+                class="text-lg sm:text-2xl font-bold text-slate-900 dark:text-white"
+              >
                 Devops and Site Reliability Engineer
               </h3>
               <div
@@ -249,7 +289,7 @@
                 >
                 <span
                   class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 w-fit"
-                  >Aug 2025 - Present</span
+                  >Aug 2025 - Nov 2026</span
                 >
               </div>
               <ul
@@ -913,14 +953,20 @@
       </p>
     </footer>
     <script>
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("click", () => {
+          document.documentElement.classList.toggle("dark");
+        });
+
       const textElement = document.getElementById("typewriter");
       const phrases = [
         "a DevOps Engineer",
-        "a Site Reliability Engineer",
+        "a Platform Engineer",
         "an Infrastructure Engineer",
         "an Automation Engineer",
         "a Cloud Engineer",
-        "a Platform Engineer",
+        "a Site Reliability Engineer",
         "a Kubernetes Engineer",
         "a CI/CD Specialist",
         "a Go Developer",
